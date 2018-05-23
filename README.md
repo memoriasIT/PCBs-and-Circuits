@@ -3,8 +3,8 @@
 </p>
   <h1 align="center"> PCBs-and-Circuits </h1>
 
-Most CPU's don't work, they are just prototypes just used Logisim to make the graphic of the concepts.
-They can work with some tweaking tho.
+Most CPU's don't work, they are just prototypes. I used Logisim in order to make the graphic of the concepts.
+They can work with some simple tweaking tho.
 
 
 ## Working Circuits
