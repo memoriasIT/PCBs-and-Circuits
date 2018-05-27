@@ -12,7 +12,7 @@ They can work with some simple tweaking tho.
 * 32bit - Final - CPU SingleCicle (8-5-2018)
 
 ## Just Prototypes
+* 32bit - ALU-Cination9000 - 2 phase (5-5-2018)
 * 16bit - V1 - Lil'HexCrusher (13-5-2018)
 * 16bit - V2 - HexCrusher (13-5-2018)
-* 32bit - ALU-Cination9000 - 2 phase (5-5-2018)
 * 32bit - V2 - CHIPY SingleCicle (23-5-2018)
