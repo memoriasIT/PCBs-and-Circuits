@@ -1,0 +1,63 @@
+	WORKING:
+NOP 		00000000
+
+LW		8c010000
+SW		ac040000
+ADD		016A5820
+SUB		016B5822
+
+ADDI		21290004
+ANDI		3022000F
+LUI		3C010000
+ORI		34220008
+
+JUMP	 	08000000
+JAL		0C000002
+JR		80200008
+BEQ		11000001
+BNE		14220001
+BGTZ		1C200002
+BLEZ		18200001
+
+
+	NOT WORKING:	
+HALT (?)	fc000000
+
+
+
+1. Load tg00rom in Instruction memory
+2. Load Alucntrl Rom
+
+OPCODE EXAMPLE: 100011 00010 00001 0001000000000100
+
+	\\\! LW !///
+100011 000000 1000 0000000000100000  lw $8, desp($0)
+lw 	rf	rd	desp
+mem[rf+desp] -> rd
+mem[r0+32] -> r8
+
+	\\\! ADD !///
+000000 00001 00010 01001 00000 100000 add $9, $1, $1
+OpAlu   rf1   rf2    rd	  xx	func
+rf1 (OpAlu) rf2 -> rd 
+func = 100000 = ADD
+rf1 + rf2 -> rd
+r1 + r2 -> r9
+
+	\\\! SUB !///
+000000 11110 0011 01011 00000 100010 sub $11, $11, $11
+OpAlu   rf1   rf2    rd	  xx	func
+rf1 (OpAlu) rf2 -> rd 
+func = 100010 = SUB
+rf1 - rf2 -> rd
+r10 + r3 -> r11
+
+	\\\! ADDI !///
+addi $9, $9, 4
+
+
+	\\\! JUMP !///
+j offset
+
+	\\\! SW !///
+sw $11, res($0)
