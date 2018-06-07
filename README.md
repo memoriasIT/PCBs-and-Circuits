@@ -10,6 +10,7 @@ They can work with some simple tweaking tho.
 ## Working Circuits
 * Fibonacci (4-5-2018)
 * 32bit - Final - CPU SingleCicle (8-5-2018)
+* 32bit - Bit-Slayer!++ (7-6-2018)
 
 ## Just Prototypes
 * 32bit - ALU-Cination9000 - 2 phase (5-5-2018)
